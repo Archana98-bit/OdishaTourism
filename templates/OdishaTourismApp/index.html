@@ -40,12 +40,7 @@
 <body data-spy="scroll" data-target=".fixed-top">
     
     <!-- Navbar -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-custom fixed-top">
-     
-        <!-- Image Logo -->
-        <!-- <a class="navbar-brand logo-image" href="index.html"><img src="{% static 'images/logo.svg' %}" alt="alternative"></a> -->
-        
-        <!-- Mobile Menu Toggle Button -->
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top" style="background-color: rgba(0, 0, 0, 0.8); box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);">    
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-awesome fas fa-bars"></span>
             <span class="navbar-toggler-awesome fas fa-times"></span>
@@ -55,287 +50,215 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="{% url 'main'%}">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#blog">BLOG <span class="sr-only">(current)</span></a>
+                    <a class="nav-link page-scroll" href="#festivals">FESTIVALS <span class="sr-only">(current)</span></a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#intro">INTRO</a>
-                </li> -->
+            
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#services">SERVICES</a>
+                    <a class="nav-link page-scroll" href="#food">FOOD</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{% url 'latest_blog' %}">LATEST BLOGS</a>
+                    <a class="nav-link page-scroll" href="#dances">FOLK DANCES</a>
                 </li>
-
+              
                 <!-- Dropdown Menu -->          
                 <li class="nav-item ">
-                    <a class="nav-link page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
-                    <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
-                    </div> -->
+                    <a class="nav-link page-scroll" href="https://dot.odisha.gov.in/" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
                 </li>
                 <!-- end of dropdown menu -->
 
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTACT</a>
+                    <a class="nav-link page-scroll" href="#callMeForm">CONTACT</a>
                 </li>
             </ul>
-            <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <span class="hexagon"></span>
-                        <i class="fab fa-twitter fa-stack-1x"></i>
-                    </a>
-                </span>
-            </span>
+       
         </div>
     </nav> <!-- end of navbar -->
     <!-- end of navbar -->
 
 
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="text-container">
-                            <h1  >WELCOME <span id="js-rotating">TO , THE IMMERSIVE ODISHA TOURISM</span></h1>
-                            <p class="p-heading p-large">The Land Of Temples And Cultural Heritage</p>
-                            <a class="btn-solid-lg page-scroll" href="#intro">DISCOVER</a>
-                        </div>
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
 
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item my_carousal active">
+            <img src="{% static 'images/cultural_banner_5.png'%}" class="d-block w-100" alt="..." >
+          </div>
+          <div class="carousel-item my_carousal ">
+            <img src="{% static 'images/culture_banner_4.png'%}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item my_carousal ">
+            <img src="{% static 'images/culture_banner_3.png'%}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
+ 
     <!-- Intro -->
  <div class="reasons">
-    <div id="intro" class="basic-1">
+    <div id="festivals" class="basic-1">
         <div class="container">
-            <div class="row">
-                <h2 style="text-align: center; margin-top: -45px; font-family: cursive; color: rgb(255, 106, 0);"><span style="margin-right: 10px; font-size: 120px; font-weight: 700;">5</span> <span style="font-size: 50px; font-weight: 500;" >Reasons To Visit Odisha.</span></h2>
-                <div class="col-lg-5"  data-aos="fade-right">
-                    <div class="text-container">
-                        <div class="section-title">FIRST</div>
-                        <h2>Temples and Monuments.</h2>
-                        <p style="color: rgb(123, 123, 123);">The historical monuments of Odisha stand testament to the glorious architectural heritage of the state. The Kalinga Architecture as it is known came into existence in the 6th century AD and continued unabated till the 16th Century AD. The Kings or Gajapati’s of Kalinga irrespective of dynasty encouraged the architects to express their creativity by infusing life into stone. </p>
-                        <p class="testimonial-text" style="color: rgb(123, 123, 123);">"The monuments were not just restricted to places of worship. Infact they were the epicenter of the socio- cultural activities which shaped our social customs and beliefs, which are followed even today."</p>
-                        <!-- <div class="testimonial-author">Louise Donovan - CEO</div> -->
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-7"  data-aos="fade-left">
-                    <div class="image-container" data-aos="fade-down">
-                        <img class="img-fluid" src="{% static 'images/lingaraj.png'%}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
+            <di class="row" style="margin: auto;">
+                <h2 style="text-align: center; margin-top: -45px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;color: rgb(255, 106, 0);"><span style="font-size: 50px; font-weight: 500;" >Culture of Odisha</span></h2>
+                <h5 style="text-align: center; margin-top: 6px; margin-bottom: 30px; font-family: cursive; color: rgb(255, 106, 0);"><span style="font-size: 38px; font-weight: 500;" >Festivals</span></h5>
+                <div class="card" style="width: 22rem;margin-right: 30px; margin-left: 50px;">
+                    <img src="{% static 'images/dhanu_jatra.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Dhanu Yatra-Bargarha</h5>
+                      <p class="card-text">
+                        Bargarh hosts the world’s largest open-air theatrical, Dhanu Yatra, annually for eleven days. It transforms into Mathura, depicting Lord Krishna's tale with Kansa. The play spans from Devaki-Vasudeva's wedding to Krishna defeating Kansa. Movable stages enhance the drama's vibrancy, making it an unforgettable spectacle.</p>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width: 22rem;margin-right: 30px; margin-left: 50px;">
+                    <img src="{% static 'images/Ratha_yatra.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Ratha Yatra-Puri</h5>
+                      <p class="card-text">
+                        The Rath Yatra, originating from Puri, Odisha, is the renowned Chariot Festival. It symbolizes Lord Jagannath's annual journey to his aunt's home. Pulled by devotees, massive chariots carry Jagannath, Balabhadra, and Subhadra to the Gundicha Temple for seven days. Devotees gladly risk their lives to pull the chariots, deeming it auspicious.</p>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width: 22rem;margin-right: 30px; margin-left: 50px;">
+                    <img src="{% static 'images/bada_jatra.jpg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bada Yatra-Malkangiri</h5>
+                      <p class="card-text">
+                        Manyamkonda, in Malkangiri's Kalimela Block, holds religious significance as the revered Lord Mahaprabhu is worshipped there. The Bada Yatra festival, starting from Manyamkonda every alternate year, extends to the Mauli Maa Temple. The festival honors deities Kanam Raju, Pota Raju, and Bal Raju, particularly revered by the Koya tribe.</p>
+                      
+                    </div>
+                  </div>
+                  {% for i in data %}
+                  <div class="card" style="width: 22rem;margin-right: 30px; margin-left: 50px;">
+                    <img src="{{i.Image.url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">{{i.FestivalName}}</h5>
+                      <p class="card-text">{{i.FestivalDetails}}</p>
+                    </div>
+                  </div>
+                  {% endfor %}
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <div id="intro" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7" data-aos="fade-right">
-                    <div class="image-container" data-aos="fade-down">
-                        <img class="img-fluid" src="{% static 'images/beach.png'%}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div>
-                <div class="col-lg-5" data-aos="fade-left">
-                    <div class="text-container">
-                        <div class="section-title">SECOND</div>
-                        <h2>Beaches
-                            Serenity unplugged!</h2>
-                        <p style="color: rgb(123, 123, 123);">Blessed with a coastline of 480 KM, Odisha’s pristine beaches captivates visitors not just with their beauty but by the calmness and feeling of detachment that the surrounding exudes.</p>
-                        <p class="testimonial-text" style="color: rgb(123, 123, 123);">"Words like “Solitude” , ‘Serenity” “Fun & Frolick” play up in our minds when we think of beach destinations, isn’t it? Odisha is THE place for the nature and landscape lovers and will delight you beyond imagination."</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-               <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of intro -->
-    <div id="intro" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5" data-aos="fade-right">
-                    <div class="text-container">
-                        <div class="section-title">THIRD</div>
-                        <h2>Ecotourism & Wildlife
-                            Reconnect with nature</h2>
-                        <p style="color: rgb(12, 12, 12);">Imagine large tracts of grasslands on the foothills of undulating hills with herds of graceful Spotted Deers, Bisons or Blackbucks grazing & jumping, Muggers basking on sandbars, Dolphins and Flamingos or Skimmers turning and rising. Odisha provides refuse to a variety of animals and birds that wild travelers fly across the world to see. 480 KMs of Ocean on eastern side, Odisha is a part of Eastern Ghats, the land of rivers, cliffs, long sandy beaches, hills stations, wetlands, pine forests, waterfalls, lakes and mangroves that shelters a wide range of flora & fauna.</p>
-                        <!-- <p class="testimonial-text">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>
-                        <div class="testimonial-author">Louise Donovan - CEO</div> -->
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-7" data-aos="fade-left">
-                    <div class="image-container" data-aos="fade-down">
-                        <img class="img-fluid" src="{% static 'images/olive-ridley.png'%}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div>
-    <div id="intro" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7"data-aos="fade-right">
-                    <div class="image-container" data-aos="fade-down">
-                        <img class="img-fluid" src="{% static 'images/odishi.png'%}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div>
-                <div class="col-lg-5" data-aos="fade-left">
-                    <div class="text-container">
-                        <div class="section-title">FOURTH</div>
-                        <h2>Cultural Heritage
-                            Experience true bliss</h2>
-                        <p style="color: rgb(21, 21, 21);">Odisha has a glorious tradition of music. The figures or dancers and musicians carved on ancient temple walls, speak of Odisha's rich musical heritage. Odissi Music is a classical form consisting of all the necessary ingredients common to Hindustani and Karnatic Music. Odissi sangita is a synthesis of four classes of music, i.e. dhruvapada, chitrapada, chitrakala and panchal, described in two treatises namely, Sangita Sarani and Sangita Narayana written in the early 19th century. It owes much to Jayadev, the saint-poet, the great composer and illustrious master of classical music.</p>
-                        <!-- <p class="testimonial-text">"Our mission here at Aira is to get you through those tough moments relying on our team's expertise in starting and growing companies."</p>
-                        <div class="testimonial-author">Louise Donovan - CEO</div> -->
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-               <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> 
-    <div id="intro" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5" data-aos="fade-right">
-                    <div class="text-container">
-                        <div class="section-title">FIFTH</div>
-                        <h2>Arts and crafts
-                            Art finds a voice</h2>
-                        <p style="color: black;">iverse, vibrant and utilitarian the art and craft of Odisha range from —stone work, silver filigree, wood craft, appliqué work, brass and bell metal work, dhokra castings, horn work, pattachitra, paper mache, terracotta, tie & dye textile in cotton,tassar and silk to name a few.</p>
-                        <p class="testimonial-text" style="color: black;">"Stemming from centuries of exquisite craftsmanship, they are a colourful testimony to the integral life force of the people of the state ."</p>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-7" data-aos="fade-left">
-                    <div class="image-container" data-aos="fade-down">
-                        <img class="img-fluid" src="{% static 'images/arts-crafts.png'%}" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div>
-
+    </div> <!-- end of basic-1 --> 
+    <center><a href="{% url 'festival' %}" ><button type="button" class="btn "style="background-color: rgb(255,106,0); font-weight: 500;">View More Festivals</button></a></center>
 </div>
-    <!-- Description -->
-    <div class="cards-1" >
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- <div class="section-title">SERVICES</div> -->
-                    <h2>Our Best Cuisines.<br> That Suits Your Needs</h2>
-                </div> <!-- end of col -->
+<div class="cards-1" id="blog">
+    <div class="container"> 
+        <h2>Add a Festival Here.</h2>
+        <form class="row g-3 needs-validation" novalidate action="{% url 'main' %}" method="post" enctype="multipart/form-data">
+            <div class="col-md-6">
+                <label for="validationCustom01" class="form-label">Festival name</label>
+                <input type="text" class="form-control" id="validationCustom01" required name="first_name">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
             </div>
-            <div class="row  cuisines" style="margin-left: 130px; margin-top: 50px;">
-                <div class="col-lg-12" >
-                   
-                    <!-- Card -->
-                    <div class="card col-lg-3">
-                        <span class="fa-stack">
-                            <img src="{% static 'images/rasagola.png' %}" alt="" class="image-fluid rasagola">
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Rasagola</h4>
-                            <p>The starting point of any success story is knowing your current position in the business environment</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
+            <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Your name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="" required name="last_name">
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3 col-md-6">
+                <label for="validationTextarea" class="form-label">Festival Details</label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Write your blog content here." required name="blog_content" maxlength="255"></textarea>
+                <div class="invalid-feedback">
+                    Please enter a message in the textarea.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required name="city">
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <input type="text" class="form-control" id="validationCustom04" required name="state">
+                <div class="invalid-feedback">
+                    Please provide a valid state.
+                </div>
+            </div>
+           
+            <div class="mb-3 col-md-8">
+                <label for="validationCustom06" class="form-label">Upload Your Image</label>
+                <input type="file" class="form-control" id="validationCustom06" aria-label="file example" required name="image">
+                <div class="invalid-feedback">Example invalid form file feedback</div>
+            </div>
+            <div class="col-12">
+                <button class="btn " type="submit" style="background-color: rgb(255,106,0); font-weight: 500;">Add Festival</button>
+            </div>
+            {% csrf_token %}
+        </form>
+    </div> <!-- end of container -->
+</div> <!-- end of cards-1 -->
+<!-- end of description -->
 
-                    <!-- Card -->
-                    <div class="card col-lg-3">
-                        <span class="fa-stack">
-                            <img src="{% static 'images/cuisinew1.png' %}" alt="" class="image-fluid rasagola">
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Pitha</h4>
-                            <p>After completing the environmental analysis the next stage is to design and  plan your development strategy</p>
-                        </div>
+<div class="reasons">
+    <div id="food" class="basic-1">
+        <div class="container">
+            <di class="row" style="margin: auto;">
+                <h2 style="text-align: center; margin-top: -45px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;color: rgb(255, 106, 0);"><span style="font-size: 50px; font-weight: 500;" >Culture of Odisha</span></h2>
+                <h5 style="text-align: center; margin-top: 6px; margin-bottom: 30px; font-family: cursive; color: rgb(255, 106, 0);"><span style="font-size: 38px; font-weight: 500;" >Different Foods</span></h5>
+                <div class="card" style="width: 22rem;margin-right: 50px; margin-left: 50px;">
+                    <img src="{% static 'images/pakhala.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Pakhala</h5>
+                      <p class="card-text">
+                        Pakhala, a cornerstone of Odia cuisine, embodies simplicity and culinary allure, refreshing palates with its essence. This quintessential dish, revered in Odisha, offers a delightful thirst-quenching experience, symbolizing the state's rich culinary tradition and cultural heritage.</p>
+                      
                     </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card col-lg-3">
-                        <span class="fa-stack">
-                            <img src="{% static 'images/Mutton.png' %}" alt="" class="image-fluid rasagola">
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">Mati Handi Mutton</h4>
-                            <p>In this phase you will focus on executing the actions plan and evaluating the results after each marketing campaign</p>
-                        </div>
+                  </div>
+                  <div class="card" style="width: 22rem;margin-right: 60px;">
+                    <img src="{% static 'images/rasagola.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Rasagola</h5>
+                      <p class="card-text">
+                        
+                        Originating in Odisha, Rasagolla shares similarities with its Bengali counterpart but boasts a distinct flavor and texture. These soft, spongy cheese balls soaked in sugar syrup are a culinary delight. Rasagolla holds cultural significance in Odisha, cherished during festivals and celebrations, representing the state's rich culinary heritage.</p>
+                      
                     </div>
-                    <div class="card col-lg-3">
-                        <span class="fa-stack">
-                            <img src="{% static 'images/Fish.png' %}" alt="" class="image-fluid rasagola">
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">The Fish curry</h4>
-                            <p>In this phase you will focus on executing the actions plan and evaluating the results after each marketing campaign</p>
-                        </div>
+                  </div>
+                  <div class="card" style="width: 22rem;margin-right: 50px;">
+                    <img src="{% static 'images/cuisinew1.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Pitha</h5>
+                      <p class="card-text">
+                        Pitha, an epitome of tradition, carries the legacy in each bite, blending sweetness and love, evoking tales of warmth and nostalgia. It stands as a symbol of cherished culinary heritage, resonating with flavors that transcend time, weaving a cultural tapestry of Odia tradition and affection.</p>
+                      
                     </div>
-                    <div class="card col-lg-3">
-                        <span class="fa-stack">
-                            <img src="{% static 'images/Pakhala.png' %}" alt="" class="image-fluid rasagola">
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">The Pakhala</h4>
-                            <p>In this phase you will focus on executing the actions plan and evaluating the results after each marketing campaign</p>
-                        </div>
-                    </div>
-                    <div class="card col-lg-3">
-                        <span class="fa-stack">
-                            <img src="{% static 'images/Crab.png' %}" alt="" class="image-fluid rasagola">
-                        </span>
-                        <div class="card-body">
-                            <h4 class="card-title">The Crab Curry</h4>
-                            <p>In this phase you will focus on executing the actions plan and evaluating the results after each marketing campaign</p>
-                        </div>
-                    </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
+                  </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of cards-1 -->
-    <!-- end of description -->
-
+    </div> <!-- end of basic-1 --> 
+    <center><a href="{% url 'food' %}"><button type="button" class="btn " style="background-color: rgb(255,106,0); font-weight: 500;">View More Foods</button></a></center>
 <!-- blog section -->
     <div class="cards-1" id="blog">
         <div class="container"> 
-            <h2>Add Your Blog Here.</h2>
-            <form class="row g-3 needs-validation" novalidate action="{% url 'add_blog' %}" method="post" enctype="multipart/form-data">
+            <h2>Add A New Food.</h2>
+            <form class="row g-3 needs-validation" novalidate action="{% url 'food' %}" method="post" enctype="multipart/form-data">
                 <div class="col-md-6">
-                    <label for="validationCustom01" class="form-label">First name</label>
-                    <input type="text" class="form-control" id="validationCustom01" required name="first_name">
+                    <label for="validationCustom01" class="form-label">Food Name</label>
+                    <input type="text" class="form-control" id="validationCustom01" required name="food_name">
                     <div class="valid-feedback">
                         Looks good!
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <label for="validationCustom02" class="form-label">Last name</label>
-                    <input type="text" class="form-control" id="validationCustom02" value="" required name="last_name">
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
-                </div>
+           
                 <div class="mb-3 col-md-6">
-                    <label for="validationTextarea" class="form-label">Blog Content</label>
-                    <textarea class="form-control" id="validationTextarea" placeholder="Write your blog content here." required name="blog_content"></textarea>
+                    <label for="validationTextarea" class="form-label">Food Details</label>
+                    <textarea class="form-control" id="validationTextarea" placeholder="Write your blog content here." required name="food_details"></textarea>
                     <div class="invalid-feedback">
                         Please enter a message in the textarea.
                     </div>
@@ -354,129 +277,124 @@
                         Please provide a valid state.
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <label for="validationCustom05" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="validationCustom05" required name="zip">
-                    <div class="invalid-feedback">
-                        Please provide a valid zip.
+                
+                <div class="mb-3 col-md-6">
+                    <label for="validationCustom06" class="form-label">Upload Your Image</label>
+                    <input type="file" class="form-control" id="validationCustom06" aria-label="file example" required name="image">
+                    <div class="invalid-feedback">Example invalid form file feedback</div>
+                </div>
+                <div class="col-12">
+                    <button class="btn text-dark" type="submit" style="background-color: rgb(255,106,0); font-weight: 500;">Add Food</button>
+                </div>
+                {% csrf_token %}
+            </form>
+             
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-1 -->
+    <!-- end of description -->
+    <div class="reasons">
+        <div id="dances" class="basic-1">
+            <div class="container">
+                <di class="row" style="margin: auto;">
+                    <h2 style="text-align: center; margin-top: -45px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;color: rgb(255, 106, 0);"><span style="font-size: 50px; font-weight: 500;" >Culture of Odisha</span></h2>
+                    <h5 style="text-align: center; margin-top: 6px; margin-bottom: 30px; font-family: cursive; color: rgb(255, 106, 0);"><span style="font-size: 38px; font-weight: 500;" >Folk Dances</span></h5>
+                    <div class="card" style="width: 22rem;margin-right: 30px; margin-left: 50px;">
+                        <img src="{% static 'images/Rabana_Chhaya.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Rabana Chhaya-Anugul</h5>
+                          <p class="card-text">
+                            Rabana Chhaya literally means 'the shadow of Ravana' and is named after the eponymous evil king of the South Asian epic Ramayana. The lyrics for the performance are taken from the Bichitra Ramayana by the Odia poet Biswanatha Khuntia.That it has been named after the villain of the Ramayana has been ascribed variously to the influence of the Jains and the Tamils</p>
+                          
+                        </div>
+                      </div>
+                      <div class="card" style="width: 22rem;margin-right: 30px; margin-left: 50px;">
+                        <img src="{% static 'images/Gotipuo_dance.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Gotipuo Nrutya-Khurda</h5>
+                          <p class="card-text">
+                            Gotipua is a traditional dance form in the state of Odisha, India, and the precursor of Odissi classical dance. It has been performed in Orissa for centuries by young boys, who dress as women to praise Jagannath and Krishna. The dance is executed by a group of boys who perform acrobatic figures inspired by the life of Radha and Krishna. .</p>
+                          
+                        </div>
+                      </div>
+                      <div class="card" style="width: 22rem;margin-right: 30px; margin-left: 50px;">
+                        <img src="{% static 'images/Chhau_Nrutya.jpg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Chhau Nrutya-Mayurbhanj</h5>
+                          <p class="card-text">
+                            Chhau, also spelled Chhou, is a semi classical Indian dance with martial and folk traditions. It is found in three styles named after the location where they are performed, i.e. the Purulia Chhau of West Bengal, the Seraikella Chhau of Jharkhand and the Mayurbhanj Chhau of Odisha.
+                            The dance ranges from celebrating martial arts, acrobatics and athletics performed in festive themes of a folk dance.
+                            </p>
+                          
+                        </div>
+                      </div>
+                      {% for i in data %}
+                      <div class="card" style="width: 22rem;margin-right: 30px; margin-left: 50px;">
+                        <img src="{{i.Image.url}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{i.FestivalName}}</h5>
+                          <p class="card-text">{{i.FestivalDetails}}</p>
+                        </div>
+                      </div>
+                      {% endfor %}
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of basic-1 --> 
+        <center><a href="{% url 'Folk_Dance' %}" ><button type="button" class="btn "style="background-color: rgb(255,106,0); font-weight: 500;">View More Folk Dances</button></a></center>
+    </div>
+    <div class="cards-1" id="blog">
+        <div class="container"> 
+            <h2>Add a Folk Dance Here.</h2>
+            <form class="row g-3 needs-validation" novalidate action="{% url 'Folk_Dance' %}" method="post" enctype="multipart/form-data">
+                <div class="col-md-6">
+                    <label for="validationCustom01" class="form-label">Folk Dance Name</label>
+                    <input type="text" class="form-control" id="validationCustom01" required name="Folk_Dance_Name">
+                    <div class="valid-feedback">
+                        Looks good!
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <label for="validationCustom02" class="form-label">Your name</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="" required name="Your_name">
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="mb-3 col-md-6">
+                    <label for="validationTextarea" class="form-label">Folk Dance Details</label>
+                    <textarea class="form-control" id="validationTextarea" placeholder="Write your blog content here." required name="Folk_Dance_Details" maxlength="255"></textarea>
+                    <div class="invalid-feedback">
+                        Please enter a message in the textarea.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom03" class="form-label">District</label>
+                    <input type="text" class="form-control" id="validationCustom03" required name="District">
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">State</label>
+                    <input type="text" class="form-control" id="validationCustom04" required name="state">
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </div>
+               
                 <div class="mb-3 col-md-8">
                     <label for="validationCustom06" class="form-label">Upload Your Image</label>
                     <input type="file" class="form-control" id="validationCustom06" aria-label="file example" required name="image">
                     <div class="invalid-feedback">Example invalid form file feedback</div>
                 </div>
                 <div class="col-12">
-                    <button class="btn btn-warning" type="submit">Add Blog</button>
+                    <button class="btn " type="submit" style="background-color: rgb(255,106,0); font-weight: 500;">Add Dance</button>
                 </div>
                 {% csrf_token %}
             </form>
-            
-
-             
         </div> <!-- end of container -->
     </div> <!-- end of cards-1 -->
     <!-- end of description -->
 
-
-    <!-- Services -->
-    <div id="services" class="cards-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">SERVICES</div>
-                    <h2>Choose The Service Package<br> That Suits Your Needs</h2>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12" style="margin-left: 25px;">
-                    
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid card1" src="{% static 'images/card1.jpg' %}" alt="alternative">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Odisha Tribal Treasure </h3>
-                            <p>15 Days and 14 Nights</p>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <p class="media-body">Covers Berhampur, Bhubaneswar with 6+ cities</p>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Dont Miss It Out.</div>
-                                </li>
-                            </ul>
-                            <p class="price">Starting at <span>Rs.9599</span></p>
-                        </div>
-                        <div class="button-container">
-                            <a class="btn-solid-reg page-scroll" href="#callMe">DETAILS</a>
-                        </div> <!-- end of button-container -->
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="{% static 'images/card2.jpg' %}" alt="alternative">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">Tiger, Textile and Temples</h3>
-                            <p>14 Days 14 Nights</p>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <p class="media-body">Covers Berhampur, Bhubaneswar with 6+ cities</p>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <div class="media-body">Dont Miss It Out.</div>
-                                </li>
-                            </ul>
-                            <p class="price">Starting at <span>Rs.12299</span></p>
-                        </div>
-                        <div class="button-container">
-                            <a class="btn-solid-reg page-scroll" href="#callMe">DETAILS</a>
-                        </div> <!-- end of button-container -->
-                    </div>
-                    <!-- end of card -->
-
-                    <!-- Card -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="img-fluid" src="{% static 'images/card3.jpg' %}" alt="alternative">
-                        </div>
-                        <div class="card-body">
-                            <h3 class="card-title">
-                                Temple Tour in Odisha
-                                14 Days,13 Nights</h3>
-                            <p>Baleswar, Baripada 6+ cities.</p>
-                            <ul class="list-unstyled li-space-lg">
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <p class="media-body">Main Attraction</p>
-                                </li>
-                                <li class="media">
-                                    <i class="fas fa-square"></i>
-                                    <p class="media-body">Dont' miss it out </p>
-                                </li>
-                            </ul>
-                            <p class="price">Starting at <span>Rs.12299</span></p>
-                        </div>
-                        <div class="button-container">
-                            <a class="btn-solid-reg page-scroll" href="#callMe">DETAILS</a>
-                        </div> <!-- end of button-container -->
-                    </div>
-                    <!-- end of card -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of cards-2 -->
-    <!-- end of services -->
-    
 
     <!-- Details 1 -->
 	<div id="details" class="accordion">
@@ -501,24 +419,10 @@
                         </span>
                     </div> -->
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
-                        <!-- <div class="accordion-body">
-                            At Aria solutions, we’ve taken the consultancy concept one step further by offering a full service management organization with expertise.
-                        </div> -->
-                    </div>
-                </div> <!-- end of item -->
-            
-                <div class="item">
-                    <!-- <div id="headingTwo">
-                        <span class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
-                            <span class="circle-numbering">2</span><span class="accordion-title">Great Strategic Business Planning</span>
-                        </span>
-                    </div> -->
-                    <!-- <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
-                        <div class="accordion-body">
-                            Aria partners with businesses to business growth and development ideas including environment analysis, plan execution and evaluation.
+                    
                         </div>
-                    </div> -->
-                </div> <!-- end of item -->
+                    </div>
+                </div> 
             
                 <div class="item">
                     <!-- <div id="headingThree">
@@ -617,118 +521,10 @@
 
                 </div> <!-- end of tab-content -->
                 <!-- end of tabs content -->
-
             </div> <!-- end of tabs-container -->
         </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2"></div> <!-- end of area-2 -->
     </div> <!-- end of tabs -->
     <!-- end of details 2 -->
-
-
-    <!-- Testimonials -->
-    <div class="slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Read Our Customer Testimonials</h2>
-                    <p class="p-heading">Our clients are our partners and we can not imagine a better future for our company without helping them reach their objectives</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <!-- <img class="card-image" src="images/testimonial-1.jpg" alt="alternative"> -->
-                                        <div class="card-body">
-                                            <div class="testimonial-text">The guys from Aria helped with getting my business off the ground and turning into a profitable company.</div>
-                                            <div class="testimonial-author">Jude Thorn - Founder</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <!-- <img class="card-image" src="images/testimonial-2.jpg" alt="alternative"> -->
-                                        <div class="card-body">
-                                            <div class="testimonial-text">I purchased the Growth Accelerator service pack a few years ago and I renewed the contract each year. </div>
-                                            <div class="testimonial-author">Marsha Singer - Marketer</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <!-- <img class="card-image" src="images/testimonial-3.jpg" alt="alternative"> -->
-                                        <div class="card-body">
-                                            <div class="testimonial-text">Aria's CEO personally attends client meetings and gives his feedback on business growth strategies.</div>
-                                            <div class="testimonial-author">Roy Smith - Developer</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <!-- <img class="card-image" src="images/testimonial-4.jpg" alt="alternative"> -->
-                                        <div class="card-body">
-                                            <div class="testimonial-text">At the beginning I thought the prices are a little high for what they offer but they over deliver each and every time.</div>
-                                            <div class="testimonial-author">Ronald Spice - Owner</div>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <!-- <img class="card-image" src="images/testimonial-5.jpg" alt="alternative"> -->
-                                        <div class="card-body">
-                                            <div class="testimonial-text">I recommend Aria to every business owner or growth leader that wants to take his company to the next level.</div>
-                                            <div class="testimonial-author">Lindsay Rune - Manager</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <!-- <img class="card-image" src="images/testimonial-6.jpg" alt="alternative"> -->
-                                        <div class="card-body">
-                                            <div class="testimonial-text">My goals for using Aria's services seemed high when I first set them but they've met them with no problems.</div>
-                                            <div class="testimonial-author">Ann Black - Consultant</div>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                            
-                            </div> <!-- end of swiper-wrapper -->
-        
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-        
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of sliedr-container -->
-                    <!-- end of card slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider -->
-    <!-- end of testimonials -->
 
 
     <!-- Call Me -->
@@ -789,7 +585,7 @@
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">CALL ME</button>
+                            <button type="submit" class="form-control-submit-button">Contact Us</button>
                         </div>
                         <div class="form-message">
                             <div id="lmsgSubmit" class="h3 text-center hidden"></div>
@@ -803,13 +599,6 @@
     </div> <!-- end of form-1 -->
     <!-- end of call me -->
 
-
-    <!-- Projects -->
-	
-
-
-    <!-- Project Lightboxes -->
-    <!-- Lightbox -->
     <div id="project-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
@@ -993,267 +782,6 @@
     </div> <!-- end of lightbox-basic -->
     <!-- end of lightbox -->
     <!-- end of project lightboxes -->
-
-
-    <!-- Team -->
-    <div class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Our Team Of Consultants</h2>
-                    <p class="p-heading">We're only as strong and as knowledgeable as our team. So here are the men and women which help customers meet goals and grow companies</p>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <!-- <img class="img-fluid" src="images/team-1.png" alt="alternative"> -->
-                        </div> <!-- end of image-wrapper -->
-                        <p class="p-large">John Whitelong</p>
-                        <p class="job-title">General Manager</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <!-- <img class="img-fluid" src="images/team-2.png" alt="alternative"> -->
-                        </div> <!-- end of image wrapper -->
-                        <p class="p-large">Veronique Smith</p>
-                        <p class="job-title">Business Developer</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <!-- <img class="img-fluid" src="images/team-3.png" alt="alternative"> -->
-                        </div> <!-- end of image wrapper -->
-                        <p class="p-large">Chris Zimerman</p>
-                        <p class="job-title">Online Marketer</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <!-- <img class="img-fluid" src="images/team-4.png" alt="alternative"> -->
-                        </div> <!-- end of image wrapper -->
-                        <p class="p-large">Mary Villalonga</p>
-                        <p class="job-title">Community Manager</p>
-                        <span class="social-icons">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of team -->
-
-
-    <!-- About -->
-    <!-- <div id="about" class="counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-xl-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/about.jpg" alt="alternative">
-                    </div> 
-                </div> 
-                <div class="col-lg-7 col-xl-6">
-                    <div class="text-container">
-                        <div class="section-title">ABOUT</div>
-                        <h2>We're Passionate About Delivering Growth Services</h2>
-                        <p>Our goal is to provide the right business growth services at the appropriate time so companies can benefit from the created momentum and thrive for a long period of time</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Everything we recommend has direct positive impact</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">You will become an important partner of our company</div>
-                            </li>
-                        </ul>
-
-                       
-                        <div id="counter">
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="231">1</div>
-                                <div class="counter-info">Happy<br>Users</div>
-                            </div>
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="121">1</div>
-                                <div class="counter-info">Issues<br>Solved</div>
-                            </div>
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="159">1</div>
-                                <div class="counter-info">Good<br>Reviews</div>
-                            </div>
-                        </div>
-                        
-
-                    </div> 
-                </div> 
-            </div> 
-        </div> 
-    </div>
-    -->
-
-
-    <!-- Contact -->
-    <div id="contact" class="form-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <div class="section-title">CONTACT</div>
-                        <h2>Get In Touch Using The Form</h2>
-                        <p>You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="address"><i class="fas fa-map-marker-alt"></i>22nd Kalinga Street, Bhubaneswar, Patia , Odisha</li>
-                            <li><i class="fas fa-phone"></i><a href="tel:003024630820">+91 980 22 126</a></li>
-                            <li><i class="fas fa-phone"></i><a href="tel:003024630820">+91 970 22 128</a></li>
-                            <li><i class="fas fa-envelope"></i><a href="mailto:office@aria.com">office@OdishaTourism.com</a></li>
-                        </ul>
-                        <h3>Follow Us On Social Media</h3>
-
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-pinterest fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <span class="hexagon"></span>
-                                <i class="fab fa-behance fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with Aria's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-2 -->
-    <!-- end of contact -->
-
-
     <!-- Footer -->
     <div class="footer">
         <div class="container">
@@ -1261,7 +789,7 @@
                 <div class="col-md-6">
                     <div class="text-container about">
                         <h4>Few Words About Aria</h4>
-                        <p class="white">We're passionate about delivering the best business growth services for companies just starting out as startups or industry players that have established their market position a long tima ago.</p>
+                       
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
@@ -1367,7 +895,4 @@
     })()
     </script>
 </body>
-
-
-
 </html>

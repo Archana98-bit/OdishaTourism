@@ -1,47 +1,3 @@
-/* Template: Aria - Business HTML Landing Page Template
-   Author: Inovatik
-   Created: Jul 2019
-   Description: Master CSS file
-*/
-
-/*****************************************
-Table Of Contents:
-
-01. General Styles
-02. Preloader
-03. Navigation
-04. Header
-05. Intro
-06. Description
-07. Services
-08. Details 1
-09. Details 2
-10. Testimonials
-11. Call Me
-12. Projects
-13. Project Lightboxes
-14. Team
-15. About
-16. Contact
-17. Footer
-18. Copyright
-19. Back To Top Button
-20. Extra Pages
-21. Media Queries
-******************************************/
-
-/*****************************************
-Colors:
-
-- Backgrounds - light gray #fbfbfb
-- Background - dark blue #153e52
-- Backgrounds navbar, footer - dark gray #113448
-- Buttons, bullets, icons - green #14bf98
-- Headings text - black #484a46
-- Body text - gray #787976
-- Body text - light gray #dfe5ec
-******************************************/
-
 
 /******************************/
 /*     01. General Styles     */
@@ -50,6 +6,7 @@ body,
 html {
     width: 100%;
 	height: 100%;
+	
 }
 
 body, p {
@@ -232,6 +189,24 @@ strong {
 	background-color: #787976;
 	color: #fff;
 	text-decoration: none;
+}
+
+/* mueseum */
+.my-carousel img{
+	width: 100%;
+	height: 490px;
+	object-fit:cover;
+}
+.my-card{
+	background-image: linear-gradient(to right top, rgba(184, 109, 243, 0.2), rgba(157, 120, 248, 0.2), rgba(129, 128, 250, 0.2), rgb(44, 93, 255,0.5), rgba(68, 140, 244, 0.8));
+	color:black
+}
+/* cuisines */
+
+/* carousal image */
+.my_carousal img{
+	height: 720px;
+	object-fit:cover;
 }
 
 .form-group {
@@ -644,10 +619,21 @@ input[type='checkbox'] {
 .navbar-custom {
 	padding-top: 0.375rem;
 	padding-bottom: 0.375rem;
-	background-color: #113448;
 	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
 	font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
 	transition: all 0.2s;
+	height: 80px;
+;
+}
+.navbar-custom::before{
+	content: '';
+    background: url(../images/nav-bg.png) no-repeat right center;
+    display: block;
+    position: absolute;
+    width: 450px;
+    height: 121px;
+    right: 0;
+    bottom: 0;
 }
 
 .navbar-custom .navbar-brand {
@@ -852,7 +838,8 @@ input[type='checkbox'] {
 /* end of hover animation */
 
 .reasons{
-	background: linear-gradient(to bottom, #592f5f 35%, #766fb2 85%);
+	/* background: linear-gradient(to bottom, #592f5f 35%, #766fb2 85%); */
+
 	
 }
 .latest_blog{
@@ -1283,6 +1270,8 @@ img.rasagola
 	padding-top: 6.625rem;	
 	padding-bottom: 5.625rem;	
 	background-color: #153e52;
+	background: rgba(0, 0, 0, 0.8); 
+	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
 }
 
 .form-1 .text-container {
@@ -1753,6 +1742,19 @@ img.rasagola
 .footer {
 	padding-top: 5rem;
 	background-color: #113448;
+	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+.footer::before{
+	content: '';
+    display: block;
+    position: absolute;
+	background: url(../images/fotterbanner.png) no-repeat left center;
+    width: 100%;
+    height: 221px;
+	top: 20;
+    right: 0;
+    bottom: 0;
 }
 
 .footer .text-container {
