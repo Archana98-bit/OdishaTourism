@@ -79,6 +79,10 @@ A feature-rich Django web application that showcases the cultural heritage, tour
 - Virtualenv (optional but recommended)
 
 
+### 📄 License
+This project is licensed under the MIT License.
+
+
 ### 📁 Setup Instructions
 
 ```bash
